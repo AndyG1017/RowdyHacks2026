@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b6sv7qv7wecdb"]
+
+[ext_resource type="PackedScene" uid="uid://c7ecagt2cqwm7" path="res://2d platformer/Level1.tscn" id="1_w6ydc"]
+
+[node name="Main" type="Node2D" unique_id=1800699610]
+
+[node name="Level1root" parent="." unique_id=1572905270 instance=ExtResource("1_w6ydc")]

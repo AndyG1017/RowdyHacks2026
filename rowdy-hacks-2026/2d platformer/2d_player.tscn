@@ -1,5 +1,18 @@
 [gd_scene format=3 uid="uid://bdi6wspxctmtv"]
 
-[node name="2DPlayer" type="CharacterBody2D" unique_id=1813599560]
+[ext_resource type="Script" uid="uid://dkk2083udxu1" path="res://scripts/2d_player.gd" id="1_13hq6"]
+[ext_resource type="Texture2D" uid="uid://b1w1nlkopicx0" path="res://assets/images/Vencotpfp.png" id="1_ycd08"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1567681986]
+[sub_resource type="CircleShape2D" id="CircleShape2D_8clta"]
+radius = 93.0215
+
+[node name="2DPlayer" type="CharacterBody2D" unique_id=1813599560]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_13hq6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=344086748]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ycd08")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1148710885]
+shape = SubResource("CircleShape2D_8clta")
