@@ -1,12 +1,12 @@
-[gd_scene format=4 uid="uid://c7ecagt2cqwm7"]
+[gd_scene format=4 uid="uid://d2r4kxrhk2okc"]
 
-[ext_resource type="Texture2D" uid="uid://bqpxtmd7n3080" path="res://2d platformer/assets/images/tile sets/world_tileset.png" id="1_i1h48"]
-[ext_resource type="PackedScene" uid="uid://bdi6wspxctmtv" path="res://2d platformer/2d_player.tscn" id="2_nxd1q"]
-[ext_resource type="PackedScene" uid="uid://bfqd1t24skxi4" path="res://2d platformer/knightenemy.tscn" id="3_nxd1q"]
-[ext_resource type="PackedScene" uid="uid://tqdht0p6eefv" path="res://2d platformer/coin.tscn" id="4_3o6qr"]
+[ext_resource type="Texture2D" uid="uid://bqpxtmd7n3080" path="res://2d platformer/assets/images/tile sets/world_tileset.png" id="1_vd7cp"]
+[ext_resource type="PackedScene" uid="uid://bdi6wspxctmtv" path="res://2d platformer/2d_player.tscn" id="2_sfknm"]
+[ext_resource type="PackedScene" uid="uid://bfqd1t24skxi4" path="res://2d platformer/knightenemy.tscn" id="3_tlhrr"]
+[ext_resource type="PackedScene" uid="uid://tqdht0p6eefv" path="res://2d platformer/coin.tscn" id="4_mewnj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3o6qr"]
-texture = ExtResource("1_i1h48")
+texture = ExtResource("1_vd7cp")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -154,23 +154,23 @@ scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAAAA4AAAAAAAEAAAABAA4AAAAAAAEAAAACAA4AAAAAAAEAAAADAA4AAAAAAAEAAAAEAA4AAAAAAAEAAAAFAA4AAAAAAAEAAAAGAA4AAAAAAAEAAAAHAA4AAAAAAAEAAAAIAA4AAAAAAAEAAAAJAA4AAAAAAAEAAAAKAA4AAAAAAAEAAAALAA4AAAAAAAEAAAAMAA4AAAAAAAEAAAANAA4AAAAAAAEAAAAOAA4AAAAAAAEAAAAPAA4AAAAAAAEAAAAQAA4AAAAAAAEAAAARAA4AAAAAAAEAAAASAA4AAAAAAAEAAAATAA4AAAAAAAEAAAAUAA4AAAAAAAEAAAAVAA4AAAAAAAEAAAAWAA4AAAAAAAEAAAAXAA4AAAAAAAEAAAAYAA4AAAAAAAEAAAAZAA4AAAAAAAEAAAAaAA4AAAAAAAEAAAAaAA0AAAAAAAAAAAAZAA0AAAAAAAAAAAAWAA0AAAAAAAAAAAAXAA0AAAAAAAAAAAAYAA0AAAAAAAAAAAAVAA0AAAAAAAAAAAAUAA0AAAAAAAAAAAATAA0AAAAAAAAAAAASAA0AAAAAAAAAAAARAA0AAAAAAAAAAAAQAA0AAAAAAAAAAAAPAA0AAAAAAAAAAAAOAA0AAAAAAAAAAAANAA0AAAAAAAAAAAAMAA0AAAAAAAAAAAALAA0AAAAAAAAAAAAKAA0AAAAAAAAAAAAJAA0AAAAAAAAAAAAIAA0AAAAAAAAAAAAHAA0AAAAAAAAAAAAGAA0AAAAAAAAAAAAFAA0AAAAAAAAAAAAEAA0AAAAAAAAAAAADAA0AAAAAAAAAAAACAA0AAAAAAAAAAAABAA0AAAAAAAAAAAAAAA0AAAAAAAAAAAAAAAwAAAAEAAQAAAAAAAsAAAAEAAQAAAAAAAoAAAAEAAQAAAAAAAkAAAAEAAQAAAAAAAgAAAAEAAQAAAAAAAcAAAAEAAQAAAAAAAYAAAAEAAQAAAAAAAUAAAAEAAQAAAAAAAQAAAAEAAQAAAAAAAMAAAAEAAQAAAAAAAIAAAAEAAQAAAAAAAEAAAAEAAQAAAA=")
 tile_set = SubResource("TileSet_8clta")
 
-[node name="2DPlayer" parent="." unique_id=1813599560 instance=ExtResource("2_nxd1q")]
+[node name="2DPlayer" parent="." unique_id=1813599560 instance=ExtResource("2_sfknm")]
 position = Vector2(98, 571)
 
 [node name="enemies" type="Node2D" parent="." unique_id=119825659]
 position = Vector2(682, 559)
 
-[node name="knight" parent="enemies" unique_id=59104807 instance=ExtResource("3_nxd1q")]
+[node name="knight" parent="enemies" unique_id=59104807 instance=ExtResource("3_tlhrr")]
 
 [node name="Coins" type="Node2D" parent="." unique_id=1311958187]
 
-[node name="Coin" parent="Coins" unique_id=1776280682 instance=ExtResource("4_3o6qr")]
+[node name="Coin" parent="Coins" unique_id=1776280682 instance=ExtResource("4_mewnj")]
 position = Vector2(353, 552)
 
-[node name="Coin2" parent="Coins" unique_id=1809385789 instance=ExtResource("4_3o6qr")]
+[node name="Coin2" parent="Coins" unique_id=1809385789 instance=ExtResource("4_mewnj")]
 position = Vector2(692, 451)
 
-[node name="Coin3" parent="Coins" unique_id=1947512874 instance=ExtResource("4_3o6qr")]
+[node name="Coin3" parent="Coins" unique_id=1947512874 instance=ExtResource("4_mewnj")]
 position = Vector2(1010, 543)
 
 [node name="Exit" type="Area2D" parent="." unique_id=626620030]

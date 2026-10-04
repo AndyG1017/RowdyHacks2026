@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqpxtmd7n3080"
-path="res://.godot/imported/world_tileset.png-77cc494f6af1f7917318aae5c43cc3ab.ctex"
+uid="uid://b1w1nlkopicx0"
+path="res://.godot/imported/Vencotpfp.png-9aa5bc544aefee0f74da3e2ba352d375.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/tile sets/world_tileset.png"
-dest_files=["res://.godot/imported/world_tileset.png-77cc494f6af1f7917318aae5c43cc3ab.ctex"]
+source_file="res://2d platformer/assets/images/Player/Vencotpfp.png"
+dest_files=["res://.godot/imported/Vencotpfp.png-9aa5bc544aefee0f74da3e2ba352d375.ctex"]
 
 [params]
 

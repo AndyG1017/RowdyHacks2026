@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dwwt2prnrs84f"
+path="res://.godot/imported/explosion.wav-3cae0c0492c7bc7f568f6dea0d453b7f.sample"
+
+[deps]
+
+source_file="res://2d platformer/assets/Sound effects/explosion.wav"
+dest_files=["res://.godot/imported/explosion.wav-3cae0c0492c7bc7f568f6dea0d453b7f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

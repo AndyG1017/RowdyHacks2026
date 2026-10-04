@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1w1nlkopicx0"
-path="res://.godot/imported/Vencotpfp.png-69dad7916c59110e387cfea619750348.ctex"
+uid="uid://cr3txgnd4k2t8"
+path="res://.godot/imported/toppng.com-explosion-sprite-png-2d-explosion-sprite-sheet-899x857.png-9dadb5ebc446829f63081e45da5f4eb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Vencotpfp.png"
-dest_files=["res://.godot/imported/Vencotpfp.png-69dad7916c59110e387cfea619750348.ctex"]
+source_file="res://2d platformer/assets/images/Player/toppng.com-explosion-sprite-png-2d-explosion-sprite-sheet-899x857.png"
+dest_files=["res://.godot/imported/toppng.com-explosion-sprite-png-2d-explosion-sprite-sheet-899x857.png-9dadb5ebc446829f63081e45da5f4eb1.ctex"]
 
 [params]
 

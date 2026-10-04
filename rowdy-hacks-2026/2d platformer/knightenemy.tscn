@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://bfqd1t24skxi4"]
+
+[ext_resource type="Script" uid="uid://b0tllg7kupn74" path="res://2d platformer/scripts/knightenemy.gd" id="1_6y1i1"]
+[ext_resource type="Texture2D" uid="uid://dhsxruhe5gyy2" path="res://2d platformer/assets/images/enemies/knight.png" id="1_7rowb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6y1i1"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4uor"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tturb"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7r61t"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r63rb"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osh17"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77thl"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(192, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43hww"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(224, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gx4tb"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0g6c"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bg8qe"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgsxa"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mcqus"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hyxun"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ofek"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(192, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mesxq"]
+atlas = ExtResource("1_7rowb")
+region = Rect2(224, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8clta"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6y1i1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4uor")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tturb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7r61t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r63rb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_osh17")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77thl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43hww")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gx4tb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0g6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bg8qe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgsxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mcqus")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hyxun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ofek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mesxq")
+}],
+"loop": 1,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7rowb"]
+size = Vector2(72, 92)
+
+[node name="knight" type="Area2D" unique_id=59104807]
+script = ExtResource("1_6y1i1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1392068313]
+texture_filter = 1
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_8clta")
+animation = &"walking"
+autoplay = "walking"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1830867888]
+position = Vector2(-5, 15)
+shape = SubResource("RectangleShape2D_7rowb")
+
+[node name="Timer" type="Timer" parent="." unique_id=1603306750]
+wait_time = 2.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
