@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dx4tjwpgdbvmx"]
 
 [ext_resource type="Script" uid="uid://ddoulhsdc3ja4" path="res://2d platformer/scripts/main.gd" id="1_1rbh6"]
-[ext_resource type="PackedScene" path="res://2d platformer/Level1.tscn" id="2_l8req"]
+[ext_resource type="PackedScene" uid="uid://c7ecagt2cqwm7" path="res://2d platformer/scenes/Levels/Level1.tscn" id="2_l8req"]
 
 [node name="Main" type="Node2D" unique_id=1800699610]
 script = ExtResource("1_1rbh6")

@@ -147,7 +147,7 @@ sources/0 = SubResource("TileSetAtlasSource_3o6qr")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8clta"]
 size = Vector2(20, 354)
 
-[node name="Level1root" type="Node2D" unique_id=1572905270]
+[node name="LevelRoot" type="Node2D" unique_id=1572905270]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=695592871]
 scale = Vector2(3, 3)
