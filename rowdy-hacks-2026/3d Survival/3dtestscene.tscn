@@ -22,6 +22,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6859741, 0, -3.1060486)
 shape = SubResource("BoxShape3D_rm5el")
 
 [node name="CharacterBody3D" parent="." unique_id=418104741 instance=ExtResource("1_0pdyb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1400.977, 224.1835, 632.4813)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1400.977, 151.4493, 632.4813)
+visible = false
 
 [node name="MeshInstance3D" parent="." unique_id=873781956 instance=ExtResource("2_2hcxc")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1935137951]
+transform = Transform3D(1, 0, 0, 0, -0.7738402, 0.6333809, 0, -0.6333809, -0.7738402, -1400.977, 574.6144, 632.4813)
+light_color = Color(1, 1, 0.8117647, 1)
+light_energy = 1.21
+sky_mode = 1

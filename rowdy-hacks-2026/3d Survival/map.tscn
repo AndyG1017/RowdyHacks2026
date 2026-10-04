@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cq0ciybyngem5"]
 
 [ext_resource type="Shader" uid="uid://beqrvd228ubc8" path="res://new_shader.gdshader" id="1_wb0h8"]
-[ext_resource type="Texture2D" uid="uid://ipfxlhhcraej" path="res://assets/Survival Assets/VoxelCore Texturemaps/Grass_01.png" id="2_7hmuj"]
-[ext_resource type="Texture2D" uid="uid://cwy2mye2rpkmq" path="res://assets/Survival Assets/VoxelCore Texturemaps/Stone_01.png" id="3_43j6q"]
-[ext_resource type="ArrayMesh" uid="uid://c4bmjs7rx65hn" path="res://assets/Survival Assets/Terrain/Terraineigth.obj" id="4_ue6al"]
+[ext_resource type="Texture2D" uid="uid://ipfxlhhcraej" path="res://3d Survival/Survival Assets/VoxelCore Texturemaps/Grass_01.png" id="2_7hmuj"]
+[ext_resource type="Texture2D" uid="uid://cwy2mye2rpkmq" path="res://3d Survival/Survival Assets/VoxelCore Texturemaps/Stone_01.png" id="3_43j6q"]
+[ext_resource type="ArrayMesh" uid="uid://c4bmjs7rx65hn" path="res://3d Survival/Survival Assets/Terrain/Terraineigth.obj" id="4_ue6al"]
 [ext_resource type="Shader" uid="uid://cj55rsie0tqiv" path="res://3d Survival/map.gdshader" id="5_ue6al"]
-[ext_resource type="Texture2D" uid="uid://bsaxhirq1hs3a" path="res://assets/Survival Assets/VoxelCore Texturemaps/Water_02.png" id="6_w3in8"]
-[ext_resource type="Texture2D" uid="uid://bjoiejqnf5a0m" path="res://assets/Survival Assets/VoxelCore Texturemaps/Water_01.png" id="7_lu7li"]
+[ext_resource type="Texture2D" uid="uid://bsaxhirq1hs3a" path="res://3d Survival/Survival Assets/VoxelCore Texturemaps/Water_02.png" id="6_w3in8"]
+[ext_resource type="Texture2D" uid="uid://bjoiejqnf5a0m" path="res://3d Survival/Survival Assets/VoxelCore Texturemaps/Water_01.png" id="7_lu7li"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7fyy3"]
 render_priority = 0

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bokg0gdoxtu3d"]
 
-[ext_resource type="Script" uid="uid://crto8475g2qq1" path="res://character_body_3d.gd" id="1_jxnwy"]
-[ext_resource type="PackedScene" uid="uid://bdnp2iq5pv1xj" path="res://assets/Survival Assets/3d Models/Superhero_Male_FullBody.gltf" id="2_0xj2u"]
+[ext_resource type="Script" uid="uid://crto8475g2qq1" path="res://3d Survival/scripts/character_body_3d.gd" id="1_jxnwy"]
+[ext_resource type="PackedScene" uid="uid://bdnp2iq5pv1xj" path="res://3d Survival/Survival Assets/3d Models/Superhero_Male_FullBody.gltf" id="2_0xj2u"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0xj2u"]
 
@@ -15,5 +15,7 @@ shape = SubResource("CapsuleShape3D_0xj2u")
 [node name="Superhero_Male_FullBody" parent="." unique_id=394901040 instance=ExtResource("2_0xj2u")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1838755410]
-transform = Transform3D(0.99939084, -0.034899496, 0, 0.032312416, 0.9253066, 0.3778408, -0.013186453, -0.37761062, 0.9258706, 0, 2.0076323, 0.7066131)
+[node name="Head" type="Node3D" parent="." unique_id=296278406]
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=1838755410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6885525, -0.0791018)
